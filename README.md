@@ -20,7 +20,7 @@ Space War is a simple 2D space-themed game where the player controls a spaceship
 - Shoot bullets at enemies using the space bar.
 - Dodge enemy ships and clouds to avoid collisions.
 - Multiple difficulty levels: Easy, Medium, and Hard.
-- Realistic sound effects and background music.
+- Sound effects and background music.
 - High score tracking and player name entry.
 
 ## Installation
