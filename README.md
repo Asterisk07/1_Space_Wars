@@ -1,4 +1,4 @@
-% Space War Game
+# Space War Game
 
 Welcome to the Space War game! This is an example game developed by Ayushmaan Pandey using the Python programming language and the Pygame library.
 

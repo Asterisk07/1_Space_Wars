@@ -339,6 +339,7 @@ WHERE score = (SELECT MAX(score) FROM scores);
 cur.execute(q)
 i=cur.fetchone()
 if 2:
+    mb.showinfo('Game Over!','Well played!\n Your score is '+str(score)+'!\nCurrent highest score is '+str(i[2])+' by '+str(i[1]))
     if (score>i[2]):
         top=Tk()
         # top.eval('PlaceWindow . center')
@@ -346,15 +347,15 @@ if 2:
         frame = Frame(top)
         frame.pack()
         bottomframe = Frame(top)
-        topframe = Frame(top)
+        # topframe = Frame(top)
 
         bottomframe.pack( side = BOTTOM )
-        topframe.pack( side = TOP )
+        # topframe.pack( side = TOP )
         top.title("High Score!")
         L1 = Label(frame, text="Enter your username")
-        L2 = Label(frame, text="You scored "+str(score))
+        # L2 = Label(frame, text="You scored "+str(score))
         L1.pack( side = LEFT)
-        L2.pack(side=LEFT)
+        # L2.pack(side=LEFT)
         E1 = Entry(frame, bd =5)
         E1.pack(side = RIGHT)
         subm = Button(bottomframe, text="Submit", fg="green",command=submit)
@@ -363,8 +364,8 @@ if 2:
         subm.pack( side = RIGHT)
       
         top.mainloop()
-    else:
-        mb.showinfo('Game Over!','Well played!\n Your score is '+str(score)+'!\nCurrent highest score is '+str(i[2])+' by '+str(i[1]))
+    # else:
+        
 conn.commit()
 conn.close()
 mb.showinfo('Saved!',' Thank you for playing')
