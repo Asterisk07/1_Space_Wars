@@ -9,7 +9,6 @@ Welcome to the Space War game! This is an example game developed by Ayushmaan Pa
 - [Installation](#installation)
 - [How to Play](#how-to-play)
 - [Screenshots](#screenshots)
-- [License](#license)
 
 ## Introduction
 
